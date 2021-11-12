@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Open+Sans:wght@300&display=swap');
+:root {
+    --SideNavBG: #e0def4;
+    --SideNavAHover: #9ccfd8;
+    --ContactItemBG: #9ccfd8;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 75%;
+}
+
+.SideNav {
+    background-color: var(--SideNavBG);
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+    height: calc(100% - 7%);
+}
+
+.SideNav li {
+    list-style: none;
+}
+
+.SideNav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.SideNav a:hover {
+    background-color: var(--SideNavAHover);
+}
+
+.Content {
+    padding: 100px;
+    background-color: #fffaf3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NewContact {
+    display: block;
+}
+
+.Block {
+    display: block;
+    outline: transparent;
+    padding: 12px 20px;
+    margin-top: 25px;
+}
+
+.NotBlock {
+    display: inline-block;
+    outline: transparent;
+    padding: 12px 20px;
+    margin-top: 25px;
+}
+
+.ContactFlex {
+    display: flexbox;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ContactItem {
+    display: inline-flex;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 175px;
+    height: 100px;
+    background-color: var(--ContactItemBG);
+}
+
+.ContactItem p {
+    margin: 0;
+    padding: 0;
+}
+
+.Plus {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75%;
+    font-size: 2em;
+}
+
+.Button {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 14px 16px;
+    margin-top: 25px;
+    margin-right: 10px;
+    color: #ffffff;
+    outline: none;
+}
+
+.Cancel {
+    background-color: #6e6a86;
+}
+
+.Cancel:hover {
+    background-color: #393552;
+}
+
+.Save {
+    background-color: #817c9c;
+}
+
+.Save:hover {
+    background-color: #6e6a86;
+}
+
+.Profile {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Profile h1 {
+    display: inline;
+    margin-right: 75px;
+}
+
+.Profile img {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    * {
+        overflow: hidden;
+        font-size: 1.125em;
+    }
+    body {
+        padding: 5px;
+    }
+    .SideNav {
+        height: calc(100% - 10px);
+    }
+    .Plus {
+        width: 100px;
+    }
+}
