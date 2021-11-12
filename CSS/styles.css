@@ -118,6 +118,22 @@ body {
     background-color: #6e6a86;
 }
 
+.Edit {
+    background-color: #6e6a86;
+}
+
+.Edit:hover {
+    background-color: #9ccfd8;
+}
+
+.Close {
+    background-color: #6e6a86;
+}
+
+.Close:hover {
+    background-color: #393552;
+}
+
 .Profile {
     font-family: 'Open Sans', sans-serif;
 }
